@@ -14,7 +14,8 @@ body, html {
 .calculator {
     align-items: center;
     margin: 10% auto auto;
-    width: fit-content; 
+    width: fit-content;
+    max-width: 14em;
     background-color: rgba(211, 211, 211, 0.979); 
     /* background-color: black;  */
     padding: 20px;
