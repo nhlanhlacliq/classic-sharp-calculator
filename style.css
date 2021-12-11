@@ -48,7 +48,7 @@ body, html {
     font-size: 42px;
     background-color: #aabeaa; 
     text-align: right;
-    padding: 18px 8px;
+    padding: 8px 8px;
     box-shadow: inset 1px 1px 6px #222, 2px 2px 2px #fff;
 }
 .display-value {
@@ -101,7 +101,7 @@ grid-row: span 2;
     font-size: 16px;
     background-color: rgba(187, 187, 187, 0.973);
     border: none;
-    box-shadow: 0.5px 2px 4px #222, inset 1px 2px 2px #eee;
+    /* box-shadow: 0.5px 2px 4px #222, inset 1px 2px 2px #eee; */
     border-radius: 5px;
     width: 2.8em;
     height: 2em;
@@ -111,12 +111,15 @@ grid-row: span 2;
     top: 75%;
     left: 20%;
     transform: rotate(165deg);
+    box-shadow: 1px -2px 4px #222, 1px 1px 1px #eee;
 }
 .right{
     position: absolute;
     top: 80%;
     left: 80%;
     transform: rotate(45deg);
+    box-shadow: 3px 0px 5px #222, -2px 0px 1px #eee;
+
 }
 @media (min-width: 681px){
     .left{
