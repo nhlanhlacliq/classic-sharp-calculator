@@ -1,0 +1,138 @@
+@font-face {
+    font-family: calc;
+    src: url(fonts/digital-7\ \(mono\ italic\).ttf);
+}
+
+body, html {
+    background-image:
+    linear-gradient(lightgray, lightgray),
+    url(images/keith-misner-h0Vxgz5tyXA-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode: saturation;
+}
+
+.calculator {
+    align-items: center;
+    margin: 10% auto auto;
+    width: fit-content; 
+    background-color: rgba(211, 211, 211, 0.979); 
+    /* background-color: black;  */
+    padding: 20px;
+    box-shadow: inset 2px 1px 1px #ddd, inset 2px 2px 2px #fff, 1px 1px 200px #222, 5px 2px 4px #444, 1px 1px 100px #555, inset -4px -1px 10px #777;
+    border-radius: 5px 5px 7px 7px;
+}
+
+.logo {
+    color: #f11;
+    text-emphasis: bold;
+    padding: 25px 0 5px 0;
+    text-align: center;
+}
+.level-one {
+    font-size: 20px;
+}
+.level-two {
+    font-size: 15px;
+}
+.level-three {
+    font-size: 10px;
+}
+.level-zero {
+    font-size: 30px;
+}
+
+
+.display {
+    font-family: calc;
+    font-size: 42px;
+    background-color: #aabeaa; 
+    text-align: right;
+    padding: 18px 8px;
+    box-shadow: inset 1px 1px 6px #222, 2px 2px 2px #fff;
+}
+.display-value {
+    background-color: #eee;
+}
+
+.button-grid{
+    height: 250px;
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 22px 0px 5px 0px;
+}
+.button-grid button {
+    font-size: 16px;
+    background-color: rgba(187, 187, 187, 0.973);
+    border: none;
+    box-shadow: 0.5px 2px 4px #222, inset 1px 2px 2px #eee;
+    border-radius: 5px;
+}
+.span-two {
+grid-row: span 2;
+}
+.red{
+    background-color: rgb(255, 104, 104) !important;
+}
+.blue {
+    background-color: rgb(148, 148, 255) !important;
+}
+.broken {
+    font-size: 0px !important;
+    background-size: cover !important;
+    border: none;
+    box-shadow: inset 4px 6px 7px #222, 1px 3px 2px #fff !important;
+}
+.broken-1 {
+    background-image: url(images/Layer\ 1.png) !important;
+}
+.broken-2 {
+    background-image: url(images/Layer\ 2.png) !important;
+}
+.broken-3 {
+    background-image: url(images/Layer\ 1-Flip.png) !important;
+}
+.broken-4 {
+    background-image: url(images/Layer\ 2-Flip.png) !important;
+}
+.loose{
+    font-size: 16px;
+    background-color: rgba(187, 187, 187, 0.973);
+    border: none;
+    box-shadow: 0.5px 2px 4px #222, inset 1px 2px 2px #eee;
+    border-radius: 5px;
+    width: 2.8em;
+    height: 2em;
+}
+.left{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: rotate(165deg);
+}
+.right{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: rotate(45deg);
+}
+@media (min-width: 681px){
+    .left{
+        top: 70%;
+        left: 20%;
+    }
+    .right{
+        top: 75%;
+        left: 80%;
+}
+@media (min-width: 1280px){
+    .left{
+        top: 70%;
+        left: 20em;
+    }
+    .right{
+        position: absolute !important;
+        top: 75%;
+        left: 80%;
+}

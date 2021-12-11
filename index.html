@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+
+        <!-- Section for display and calc name -->
+        <div class= "display-section">
+            <div class="logo"><span class="level-one">SHARP</span> 
+                <span class="level-two">ELSI MATE</span> 
+                <span class="level-three">EL-</span> 
+                <span class="level-zero">231</span> 
+                <span class="level-three">L</span> 
+            </div>
+            <div data-display class="display">0</div>
+        </div>
+        
+        <!-- Section for calc buttons -->
+        <div class= "button-section">
+            <section class="button-grid">
+                <!-- Maybe have a separate 'data-op' for the special operations -->
+                <button data-operation-adv>+/-</button>
+                <button data-operation-adv class="broken broken-1">%</button>
+                <button data-operation-adv class="broken broken-3">Sqr</button>
+                <button data-clear class="red">C.CE</button>
+                
+                <button data-operation-adv class="blue broken broken-1">R.CM</button>
+                <button data-operation-adv class="blue broken broken-2">M-</button>
+                <button data-operation-adv class="blue broken broken-4">M+</button>
+                <button data-operation>&divide</button>
+                
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>&times</button>
+                
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>-</button>
+
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation class="span-two">+</button>
+
+                <button data-number>0</button>
+                <button data-number>.</button>
+                <button data-equals>=</button>
+            </section>
+            
+        </div>
+    </div>
+    <!-- Loose Buttons -->
+    <button data-operation-adv class="blue loose left" id="M-">M-</button>
+    <button data-operation-adv class="loose right" id="Sqr"> &radic; </button>
+
+
+</body>
+</html>
