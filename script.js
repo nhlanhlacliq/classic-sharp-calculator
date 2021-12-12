@@ -157,7 +157,19 @@ class Calculator {
     }
 }
 
+flicker = () => {
+    if (flickerNumber === undefined){flickerNumber = display.textContent}
+    counter ++;
+    display.textContent = 'Uhm';
+    if (counter < 20)
+        requestAnimationFrame(flicker);
+    else {
+        counter = 0;
+        display.textContent = flickerNumber;
+        flickerNumber = undefined;
+    }
 
+}
 
 // Page contents
 const numbers = document.querySelectorAll('[data-number]');
@@ -168,6 +180,8 @@ const clear = document.querySelectorAll('[data-clear]');
 const display = document.querySelector('[data-display]');
 
 const calculator = new Calculator(0);
+let counter = 0
+let flickerNumber = undefined;
 
 // Event Listeners
 // NUMBERS
@@ -196,6 +210,8 @@ advancedOperations.forEach(button => {
 equals.forEach(button => {
     button.addEventListener('click', () => {
         calculator.equals();
+        let random = Math.random();
+        if (random > 0.85) {requestAnimationFrame(flicker);} //displays an "uhm" message 15% of the time
     })
 })
 
